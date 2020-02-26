@@ -7,6 +7,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
     <context:component-scan base-package="edu.wctc"/>
+    <!-- For the spring assignment-->
+    <context:component-scan base-package="spring"/>
 
     <mvc:annotation-driven/>
 
@@ -16,4 +18,7 @@
     </bean>
 
     <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"/>
+
+    <util:properties id="gameProp" location="classpath:gameProp.properties"/>
+    <util:properties id="gradeLevelProp" location="classpath:gradeLevel.properties"/>
 </beans>

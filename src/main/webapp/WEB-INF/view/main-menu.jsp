@@ -15,6 +15,8 @@
     <a href="registrar/home">Registrar Aid</a>
     <a href="showForm">Shout Page</a>
     <a href="Card/">Card Example</a>
+    <a href="student/showForm">student form</a>
+    <a href="travel/showForm">Exchange Student</a>
     <br/>
     <img src="resources/img/mew.jpg" alt="smoll cat"/>
 </body>
