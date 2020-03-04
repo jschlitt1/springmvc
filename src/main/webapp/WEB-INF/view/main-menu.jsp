@@ -9,14 +9,28 @@
 <html>
 <head>
     <title>Spring MVC Demo</title>
+    <%-- Bootstrap stuff --%>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <a href="fin-aid/home">Financial Aid</a>
-    <a href="registrar/home">Registrar Aid</a>
-    <a href="showForm">Shout Page</a>
-    <a href="Card/">Card Example</a>
-    <a href="student/showForm">student form</a>
-    <a href="travel/showForm">Exchange Student</a>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="<%= request.getContextPath()%>/controller?page=index">Class Demo</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="fin-aid/home">Financial Aid</a></li>
+            <li><a href="registrar/home">Registrar Aid</a></li>
+            <li><a href="showForm">Shout Page</a></li>
+            <li><a href="Card/">Card Example</a></li>
+            <li><a href="student/showForm">student form</a></li>
+            <li><a href="travel/showForm">Exchange Student</a></li>
+            <li><a href="validation/form">Customer Stuff</a></li>
+        </ul>
+    </div>
+</nav>
     <br/>
     <img src="resources/img/mew.jpg" alt="smoll cat"/>
 </body>

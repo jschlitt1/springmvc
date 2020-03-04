@@ -17,6 +17,10 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="message"/>
+    </bean>
+
     <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"/>
 
     <util:properties id="gameProp" location="classpath:gameProp.properties"/>
